@@ -1,4 +1,4 @@
-# routing-vrp
+# compute-distance-matrix-php
 
-PHP version, using the distance matrix in a vrp (Vehicle Routing Problem) program:
-https://developers.google.com/optimization/routing/vrp#entire_code
+PHP version to calculate the distance matrix between addresses:
+https://developers.google.com/optimization/routing/vrp#compute_matrix
