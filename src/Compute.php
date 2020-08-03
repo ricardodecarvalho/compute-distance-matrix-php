@@ -95,10 +95,9 @@ class Compute
             $rowList = [];
             for ($i = 0; $i < count($row['elements']); $i++) {
                 if ($row['elements'][$i]['status'] !== 'OK') {
-                    error_log("The origin and/or destination of this pairing could not be geocoded: "
-                        . json_encode($response));
                     throw new \InvalidArgumentException(
-                        'Um ou mais endereços não puderam ser geocodificados.',
+                        "The origin and/or destination of this pairing could not be geocoded: "
+                        . json_encode($response),
                         400
                     );
                 }
