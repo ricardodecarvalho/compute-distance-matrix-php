@@ -70,8 +70,7 @@ class Compute
             . '&origins=' . urlencode($originAddressStr)
             . '&destinations=' . urlencode($destAddressStr)
             . '&key=' . $this->apiKey;
-
-        //$jsonResult = file_get_contents(__DIR__ . '/matrix.json');
+        
         $jsonResult = $this->callCurl($request);
 
         return json_decode($jsonResult, true);
